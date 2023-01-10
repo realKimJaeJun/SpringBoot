@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>customer::modify</title>
+	</head>
+<body>
+	<h3>customer 수정</h3>
+	<a href="/BookStore">BookStore 메인</a>
+	<a href="/BookStore/customer/list">customer 목록</a>
+	
+	<form th:action="@{/customer/modify?(custId=${cust.custId})}" method="post">
+		<table border="1">
+			<tr>
+				<td>고객ID</td>
+				<td><input type="text" name="custId" th:value="${cust.custId}" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>고객명</td>
+				<td><input type="text" name="name" th:value="${cust.name}"></td>
+			</tr>
+			<tr>
+				<td>주소</td>
+				<td><input type="text" name="address" th:value="${cust.address}"></td>
+			</tr>
+			<tr>
+				<td>휴대폰</td>
+				<td><input type="text" name="phone" th:value="${cust.phone}"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right"><input type="submit" value="등록"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
