@@ -22,6 +22,7 @@ public class User4Controller {
 	
 	@GetMapping("/list")
 	public String list(Model model) {
+		
 		List<User4VO> users = service.selectUser4s();
 		model.addAttribute("users", users);
 		return "/user4/list";
