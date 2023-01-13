@@ -18,6 +18,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeHttpRequests().antMatchers("/").permitAll();
 		http.authorizeHttpRequests().antMatchers("/admin/**").hasRole("ADMIN");
 		http.authorizeHttpRequests().antMatchers("/member/**").hasAnyRole("ADMIN", "MEMBER");
+		http.authorizeHttpRequests().antMatchers("/user2/loginSuccess").hasAnyRole("3", "4", "5");
 		
 		// 사이트 위변조 요청 방지
 		http.csrf().disable();
