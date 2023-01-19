@@ -6,19 +6,24 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 import kr.co.Sboard.vo.ArticleVO;
+import kr.co.Sboard.vo.FileVO;
 
 @Mapper
 @Repository
 public interface ArticleDAO {
 	
-	public List<ArticleVO> selectArticles();
+	public List<ArticleVO> selectArticles(int start);
 
+	public int selectCountTotal();
+	
 	public ArticleVO selectArticle(int no);
 	
-	public void writeArticle(ArticleVO vo);
+	public int insertArticle(ArticleVO vo);
 	
-	public void modifyArticle(ArticleVO vo);
+	public int updateArticle(ArticleVO vo);
 	
-	public void deleteArticle(int no);
+	public int deleteArticle(int no);
+	
+	public int insertFile(FileVO vo);
 	
 }

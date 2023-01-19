@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>회원가입</title>    
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
-    <script>
+    <script th:src="@{/js/register.js}"></script>
+   <!--  <script>
     	window.onload = function(){
     		
     		const btnCheckUid = document.getElementById('btnCheckUid');
@@ -78,7 +79,7 @@
     				}
     			}
     		});
-    		CheckHp.addEventListener('keyup', ()=>{
+    		CheckHp.addEventListener('change', ()=>{
 				let hp = document.querySelector('input[name=hp]').value;
     			
     			// AJAX 전송
@@ -112,7 +113,7 @@
     			}
     		});
     	}
-    </script>
+    </script> -->
 </head>
 <body>
     <div id="wrapper">
@@ -174,7 +175,8 @@
                     <tr>
                         <th>휴대폰</th>
                         <td>
-                            <input type="text" name="hp" placeholder="- 포함 13자리 입력" id="CheckHp"/>
+                            <input type="text" name="hp" id="CheckHp" placeholder="- 포함 13자리 입력"/>
+                            <span class="resultHp"></span>
                         </td>
                     </tr>
                     <tr>

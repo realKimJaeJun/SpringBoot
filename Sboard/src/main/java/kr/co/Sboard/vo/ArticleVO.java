@@ -1,8 +1,20 @@
 package kr.co.Sboard.vo;
 
-import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
-@Data
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Builder
 public class ArticleVO {
 
 	private int no;
@@ -12,8 +24,17 @@ public class ArticleVO {
 	private String title;
 	private String content;
 	private int file;
+	private MultipartFile fname;
 	private int hit;
 	private String uid;
 	private String regip;
 	private String rdate;
+	
+	
+	// 추가필드
+	private String nick;
+	
+	public String getRdate() {
+		return rdate.substring(2, 10);
+	}
 }
