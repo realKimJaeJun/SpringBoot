@@ -156,6 +156,6 @@ function passwordCheck() {
 		}
 	} else {
 		passOk = false
-		resultPass.innerText = '비멀번호는 숫자,영문,특수문자 포함 8자리 이상 이어야 합니다.'
+		resultPass.innerText = '비밀번호는 숫자,영문,특수문자 포함 8자리 이상 이어야 합니다.'
 	}
 }

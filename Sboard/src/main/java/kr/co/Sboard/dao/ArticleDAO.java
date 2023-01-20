@@ -22,8 +22,12 @@ public interface ArticleDAO {
 	
 	public int updateArticle(ArticleVO vo);
 	
+	public int updateDownload(int fno);
+	
 	public int deleteArticle(int no);
 	
 	public int insertFile(FileVO vo);
+	
+	public FileVO selectFile(int fno);
 	
 }

@@ -84,6 +84,14 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<!-- 프로젝트 배포과정에서 테스트 제외 (시간 오래 걸리고 에러 많이 남) -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 

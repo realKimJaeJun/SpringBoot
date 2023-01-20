@@ -37,4 +37,6 @@ public class ArticleVO {
 	public String getRdate() {
 		return rdate.substring(2, 10);
 	}
+	
+	private FileVO fileVO;
 }
