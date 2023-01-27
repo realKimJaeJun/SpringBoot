@@ -21,4 +21,13 @@ public class ArticleVO {
     private String uid;
     private String regip;
     private String rdate;
+
+    // 추가필드
+    private String nick;
+
+    public String getRdate(){
+        return rdate.substring(2, 10);
+    }
+
+    private FileVO fileVO;
 }

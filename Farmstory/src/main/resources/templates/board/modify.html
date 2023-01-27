@@ -2,8 +2,7 @@
 <th:block th:replace="~{/_header}"/>
 <th:block th:replace="~{/board/__${group}__}"/>
         <main id="board" class="modify">
-            <!--/*
-            <form th:action="@{/modify(no=${article.no})}" method="post" enctype="multipart/form-data">
+            <form th:action="@{/board/modify(group=${group},cate=${cate},no=${article.no})}" method="post" enctype="multipart/form-data">
                 <table border="0">
                     <caption>글수정</caption>
                     <tr>
@@ -19,9 +18,8 @@
                         <td><input type="file" name="fname"/>[[${article.fileVO.oriName}]]</td>
                     </tr>
                 </table>
-                */-->
-                <div><!-- ,no=${article.no} 나중에 삽입 -->
-                    <a th:href="@{/view(group=${group},cate=${cate})}" class="btn btnCancel">취소</a>
+                <div>
+                    <a th:href="@{/board/view(group=${group},cate=${cate},no=${article.no})}" class="btn btnCancel">취소</a>
                     <input type="submit" value="수정완료" class="btn btnComplete"/>
                 </div>
             </form>
