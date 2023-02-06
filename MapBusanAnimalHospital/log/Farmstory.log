@@ -1,0 +1,13 @@
+2023-02-06 17:22:38.822  INFO 15568 --- [restartedMain] .b.a.h.MapBusanAnimalHospitalApplication : Starting MapBusanAnimalHospitalApplication using Java 11.0.16.1 on DESKTOP-8N3GG4O with PID 15568 (C:\Users\java2\Desktop\Workspace\SpringBoot\MapBusanAnimalHospital\build\classes\java\main started by java2 in C:\Users\java2\Desktop\Workspace\SpringBoot\MapBusanAnimalHospital)
+2023-02-06 17:22:38.824  INFO 15568 --- [restartedMain] .b.a.h.MapBusanAnimalHospitalApplication : No active profile set, falling back to 1 default profile: "default"
+2023-02-06 17:22:38.881  INFO 15568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-06 17:22:38.882  INFO 15568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-06 17:22:39.766  INFO 15568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-06 17:22:39.777  INFO 15568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06 17:22:39.777  INFO 15568 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-06 17:22:39.830  INFO 15568 --- [restartedMain] o.a.c.c.C.[.[.[/MapBusanAnimalHospital]  : Initializing Spring embedded WebApplicationContext
+2023-02-06 17:22:39.830  INFO 15568 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 947 ms
+2023-02-06 17:22:40.020  INFO 15568 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-06 17:22:40.141  WARN 15568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-02-06 17:22:40.165  INFO 15568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/MapBusanAnimalHospital'
+2023-02-06 17:22:40.174  INFO 15568 --- [restartedMain] .b.a.h.MapBusanAnimalHospitalApplication : Started MapBusanAnimalHospitalApplication in 1.764 seconds (JVM running for 2.132)
