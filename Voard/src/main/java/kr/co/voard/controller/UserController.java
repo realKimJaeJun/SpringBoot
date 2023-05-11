@@ -35,6 +35,13 @@ public class UserController {
 		return service.selectTerms();
 	}
 
+	// 아이디 중복 체크
+	@GetMapping("/user/checkUid")
+	public int checkUid(String uid){
+		return service.countUid(uid);
+
+	}
+
 	@PostMapping("/user/register")
 	public void register(@RequestBody UserVO vo) {
 		service.insertUser(vo);
